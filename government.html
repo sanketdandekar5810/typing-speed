@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description"
+        content="Prepare for SSC, Banking, Railway and other government typing exams with realistic paragraphs, live WPM and accuracy tracking.  and Government Exam typing. Improve your typing speed, WPM, and accuracy with real-time typing tests.">
+
+    <meta name="keywords"
+        content="typing practice, best typing website typing test, English typing, SSC typing, Banking typing, Railway typing, Number typing, typing speed test">
+
+    <meta name="author" content="Sanket">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#1e3a8a">
+
+
+    <title>Typing Practice - Free Online Typing Test</title>
+    <link rel="icon" href="logoo.png">
+    <title>🏛 Government Exam Typing Simulator</title>
+
+    <link rel="stylesheet" href="government.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">🏛 Government Exam Typing Practice</h1>
+        <p class="subtitle">
+            Practice for SSC • Banking • Railway • Government Exams
+        </p>
+        <hr>
+        <div class="exam-card">
+
+            <div>
+                <h3>Exam</h3>
+                <p id="examCardName">SSC</p>
+            </div>
+
+            <div>
+                <h3>Target Speed</h3>
+                <p>35 WPM</p>
+            </div>
+
+            <div>
+                <h3>Difficulty</h3>
+                <p>Intermediate</p>
+            </div>
+        </div>
+
+
+
+        <div class="exam-info">
+            <p><strong>Instructions:</strong></p>
+            <ul>
+                <li>Choose your exam category.</li>
+                <li>Select the test duration.</li>
+                <li>Type the paragraph as accurately as possible.</li>
+                <li>Your WPM and Accuracy will be calculated automatically.</li>
+            </ul>
+        </div>
+        <hr>
+        
+        <div class="exam-buttons">
+        
+
+            <button class="exam-btn active" onclick="setExam('ssc')">
+                SSC
+            </button>
+
+            <button class="exam-btn" onclick="setExam('bank')">
+                Banking
+            </button>
+
+            <button class="exam-btn" onclick="setExam('railway')">
+                Railway
+            </button>
+
+            <button class="exam-btn" onclick="setExam('general')">
+                General
+            </button>
+        </div>
+        <div class="time-buttons">
+
+            <button class="time-btn" onclick="setTime(30)">30s</button>
+            <button class="time-btn" onclick="setTime(180)">3 min</button>
+            <button class="time-btn" onclick="setTime(300)">5 min</button>
+            <button class="time-btn" onclick="setTime(600)">10 min</button>
+            <button class="time-btn" onclick="setTime(900)">15 min</button>
+        </div>
+
+
+
+
+
+
+
+        <hr>
+
+
+
+        <div id="worddisplay" class="word-box">
+
+            Loading words...
+        </div>
+
+        <input type="text" id="typinginput" placeholder="Start typing here..." autocomplete="off">
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h4>Time</h4>
+                <span id="timer">60</span>
+            </div>
+
+            <div class="stat-card">
+                <h4>WPM</h4>
+                <span id="wpm">0</span>
+            </div>
+
+            <div class="stat-card">
+                <h4>Accuracy</h4>
+                <span id="Accuracy">0%</span>
+            </div>
+
+            <div class="stat-card">
+                <h4>Characters</h4>
+                <span id="chars">0</span>
+            </div>
+
+        </div>
+        <hr>
+        <div class="actions">
+
+            <button id="restart-btn">Restart Test</button>
+            <a href="number.html" class="button-link"><button class="next-btn">Number Typing Page</button></a>
+            
+            <a href="index.html" class="button-link"><button class="next-btn">Text Typing Page</button></a>
+
+        </div>
+
+    </div>
+    <script src="government.js" defer></script>
+
+</body>
+<footer class="footer-brand">
+    Built by STD.5810
+</footer>
+
+</html>

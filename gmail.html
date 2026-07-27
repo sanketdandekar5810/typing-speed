@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logoo.png">
+    <title>Gmail Typing Practice</title>
+    <link rel="stylesheet" href="gg.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="email-section">
+
+            <!-- Example Email -->
+            <div class="email-box">
+                <div class="gmail-logo">
+                    <img src="logo_gmail.png">
+                </div>
+
+                <div class="header">Demo Message</div>
+
+                <div class="field">
+                    <span>To:</span>
+                    <input id="sampleTo" readonly>
+                </div>
+
+                <div class="field">
+                    <span>Subject:</span>
+                    <input id="sampleSubject" readonly>
+                </div>
+
+                <div id="sampleMessage" class="message"></div>
+
+
+                <button>Send</button>
+
+                <div class="attachments">
+
+                    <button>📎 Attach</button>
+                    <div id="sampleAttachments" class="attachments"></div>
+
+                    <div id="demofileOptions" class="file-options"></div>
+
+                    <div></div>
+
+                </div>
+            </div>
+
+
+            <!-- Typing Practice -->
+            <div class="email-box">
+                <div class="gmail-logo">
+                    <img src="logo_gmail.png">
+                </div>
+                <div class="header">Practice Message</div>
+
+                <div class="field">
+                    <span>To:</span>
+                    <input id="typingTo" type="text">
+                </div>
+
+                <div class="field">
+                    <span>Subject:</span>
+                    <input id="typingSubject" type="text">
+                </div>
+
+                <div id="typingMessage"
+     class="message typing-area"
+     contenteditable="true"
+     spellcheck="false"
+     data-placeholder="Type message...">
+</div>
+                <button id="sendBtn">Send</button>
+
+                <div class="attachments">
+
+                    <button id="attachBtn">📎 Attach</button>
+
+                    <div id="fileOptions"></div>
+
+                    <div id="userAttachments" class="file-options"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="stats">
+
+            <div>Time: <span id="timer">60</span>s</div>
+
+            <div>WPM: <span id="wpm">0</span></div>
+
+            <div>Accuracy: <span id="accuracy">100</span>%</div>
+
+            <div id="resultScreen" class="result-screen">
+
+                <h2>Test Completed 🎉</h2>
+
+                <p>⏱ Time Used: <span id="resultTime"></span>s</p>
+                <p>⚡ WPM: <span id="resultWpm"></span></p>
+                <p>🎯 Accuracy: <span id="resultAccuracy"></span>%</p>
+                <p>📎 Attachments: <span id="resultAttachments"></span></p>
+
+                <button id="restartBtn">Restart</button>
+
+            </div>
+            <div class="time-buttons">
+
+                <button class="time-btn" onclick="setTime(5)">1 min</button>
+                <button class="time-btn" onclick="setTime(90)">1.5 min</button>
+                <button class="time-btn" onclick="setTime(120)">2 min</button>
+                <button class="time-btn" onclick="setTime(180)">3 min</button>
+                <button class="time-btn" onclick="setTime(300)">5 min</button>
+            </div>
+            <button id="restartTestBtn">Restart Test</button>
+            <a href="number.html" class="button-link"><button class="next-btn">Number Typing Page</button></a>
+            <a href="index.html" class="button-link"><button class="next-btn">Text Typing Page</button></a>
+             <a href="government.html" class="button-link"><button class="next-btn">Government Typing Page</button></a>
+
+        </div>
+
+
+        <script src="ggmail.js"></script>
+
+</body>
+<footer class="footer-brand">
+   Built by STD.5810
+</footer>
+
+</html>

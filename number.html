@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Free online typing practice for English, Number,  and Government Exam typing. Improve your typing speed, WPM, and accuracy with real-time typing tests.">
+
+    <meta name="keywords"
+        content="typing practice, best typing website typing test, English typing, SSC typing, Banking typing, Railway typing, Number typing, typing speed test">
+
+    <meta name="author" content="Sanket">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#1e3a8a">
+
+
+    <title>Typing Practice - Free Online Typing Test</title>
+
+    
+    <link rel="icon" href="logoo.png">
+
+    <link rel="stylesheet" href="webcss.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Number Typing Speed Test</h1>
+        <hr>
+        <div id="numberdisplay" class="number-box">
+
+            Loading number...
+        </div>
+
+        <input type="text" id="typinginput" placeholder="Start typing here..." autocomplete="off">
+
+        <div class="stats">
+
+            <p>Time: <span id="timer">60</span>s</p>
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="Accuracy">0</span></p>
+            <p>Numbers Typed: <span id="chars"></span></p>
+
+        </div>
+        <hr>
+        <div class="time-buttons">
+
+            
+            <button class="time-btn" onclick="setTime(30)">30s</button>
+            <button class="time-btn" onclick="setTime(60)">1 min</button>
+            
+            <button class="time-btn" onclick="setTime(120)">2 min</button>
+            
+            <button class="time-btn" onclick="setTime(180)">3 min</button>
+            
+            <button class="time-btn" onclick="setTime(300)">5 min</button>
+
+        </div>
+
+        
+        <div class="mode-buttons">
+            <button id="beginnerBtn" class="mode-btn" onclick="beginnerMode()">Beginner Mode</button>
+            <button id="normalBtn" class="mode-btn" onclick="normalMode()">Normal</button>
+            <button id="hardBtn" class="mode-btn" onclick="hardMode()">Hard Mode</button>
+
+        </div>
+
+        <hr>
+
+        <div class="actions">
+
+            <button id="restart-btn">Restart Test</button>
+            <a href="index.html" class="button-link"><button class="next-btn">Text Typing Page</button></a>
+            
+            <a href="government.html" class="button-link"><button class="next-btn">Government Typing Page</button></a>
+
+
+        </div>
+        <script src="java.js" defer></script>
+
+</body>
+<footer class="footer-brand">
+   Built by STD.5810
+</footer>
+</html>
