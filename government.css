@@ -1,3 +1,86 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+
+width:100%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 50px;
+
+background:white;
+
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+position:sticky;
+
+top:0;
+
+left:0;
+
+z-index:1000;
+
+}
+
+.logo a{
+
+    display:flex;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#1e3a8a;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+.logo img{
+
+    width:100px;
+
+    height:42px;
+
+    margin-right:12px;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:28px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#334155;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#2563eb;
+
+}
 /* Basic Reset */
 * {
     margin: 0;
@@ -10,13 +93,14 @@ body{
     margin:0;
     padding:40px;
 
-    background:#eef3f8;
+    background:#eef3f8 ;
 
     font-family:"Segoe UI",sans-serif;
+ margin:0;
 
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
+   
+
+    color:white;
 
     min-height:100vh;
 }
@@ -55,14 +139,7 @@ body{
     color:#334155;
     font-weight:600;
 }
-.container{
-    width:100%;
-    max-width:1100px;
-    background:white;
-    border-radius:18px;
-    padding:50px;
-    box-shadow:0 15px 40px rgba(0,0,0,.12);
-}
+
 .container hr {
     border: none;
     height: 1px;
@@ -88,7 +165,7 @@ body{
 #worddisplay {
     font-size: 26px;
     margin: 40px auto;
-    max-width: 800px;
+    max-width: 1200px;
     line-height: 1.6;
     color: #000000;
 }
@@ -99,7 +176,7 @@ body{
     background:white;
     border:2px solid #d1d9e6;
     border-radius:18px;
-    padding:35px;
+    padding: 20px;
     font-size:26px;
     font-weight:500;
     line-height:2.1;
@@ -150,28 +227,58 @@ body{
     box-shadow:0 0 15px rgba(37,99,235,.25);
 
 }
-.footer-brand{
-    position: fixed;
-    bottom: 15px;
-    right: 20px;
+/* =========================
+   FOOTER
+========================= */
 
-    font-size: 14px;
-    font-weight: 600;
+.footer{
 
-    color: #64748b;
+    margin-top:60px;
 
-    letter-spacing: 1px;
+    background:#1e293b;
 
-    user-select: none;
+    color:white;
 
-    opacity: 0.8;
+    padding:45px 20px;
 
-    transition: 0.3s ease;
+    text-align:center;
+
 }
 
-.footer-brand:hover{
-    opacity: 1;
-    color: orangered;
+.footer h2{
+
+    margin-bottom:15px;
+
+}
+
+.footer p{
+
+    color:#cbd5e1;
+
+    line-height:1.7;
+
+}
+
+.footer-links{
+
+    margin:25px 0;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:0 15px;
+
+}
+
+.footer-links a:hover{
+
+    color:#60a5fa;
+
 }
 
 .stats{
@@ -406,4 +513,203 @@ text-align:center;
         0 0 20px rgba(244, 197, 66, 0.4);
 }
 
+/* ===========================
+   ABOUT PAGE
+===========================*/
 
+.about-hero{
+
+text-align:center;
+
+padding:40px 20px;
+
+}
+
+.about-hero h1{
+
+font-size:42px;
+
+color:#1e3a8a;
+
+margin-bottom:20px;
+
+}
+
+.about-hero p{
+
+font-size:20px;
+
+color:#dfe305;
+
+max-width:800px;
+
+margin:auto;
+
+line-height:1.8;
+
+}
+/* Legal Pages */
+
+.about-section{
+
+max-width:900px;
+
+margin:25px auto;
+
+}
+
+.about-section h2{
+
+color:#2563eb;
+
+margin-bottom:15px;
+
+font-size:30px;
+
+}
+
+.about-section p{
+
+color:#d1d5db;
+
+line-height:1.9;
+
+font-size:18px;
+
+}
+
+.about-list{
+
+padding-left:25px;
+
+line-height:2;
+
+color:#d1d5db;
+
+}
+
+.about-list li{
+
+margin-bottom:10px;
+
+}
+
+/* Card */
+
+.about-section{
+
+background:#161d29;
+
+padding:30px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+border:1px solid #2d3748;
+
+transition:.3s;
+
+}
+
+.about-section:hover{
+
+transform:translateY(-4px);
+
+border-color:#2563eb;
+
+}
+
+.feature-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-top:30px;
+
+}
+
+.feature-card{
+
+background:white;
+
+border-radius:15px;
+
+padding:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.feature-card h3{
+
+color:#2563eb;
+
+margin-bottom:12px;
+
+}
+
+.feature-card p{
+color: #000000;
+font-size:16px;
+
+line-height:1.7;
+
+}
+
+.about-list{
+
+margin-left:25px;
+
+line-height:2;
+
+font-size:18px;
+
+color:white;
+
+}
+
+
+
+/*=========================
+404 PAGE
+==========================*/
+
+.home-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#2563eb;
+
+color:white;
+
+text-decoration:none;
+
+font-size:18px;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.home-btn:hover{
+
+background:#1d4ed8;
+
+transform:translateY(-3px);
+
+}

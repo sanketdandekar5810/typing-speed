@@ -314,26 +314,3 @@ cursor:pointer;
 .time-btn:hover{
     background:#ddd;
 }
-.footer-brand{
-    position: fixed;
-    bottom: 15px;
-    right: 20px;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    color: #64748b;
-
-    letter-spacing: 1px;
-
-    user-select: none;
-
-    opacity: 0.8;
-
-    transition: 0.3s ease;
-}
-
-.footer-brand:hover{
-    opacity: 1;
-    color: #2563eb;
-}
