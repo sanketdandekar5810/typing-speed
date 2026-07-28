@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://sanketdandekar5810.github.io/typing-speed/sitemap.xml
